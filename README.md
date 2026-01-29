@@ -1,70 +1,147 @@
-# Getting Started with Create React App
+# 🌍 tour and travels website  – React Tourism Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive tourism website built using **React**, showcasing premium tour packages across India with galleries, enquiry modals, featured tours slider, and smooth navigation.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- 🌄 Premium tour packages (Chardham, Gujarat, Rajasthan, Kashmir, South India, etc.)
+- 🖼️ Image gallery with modal preview
+- 📩 Enquiry modal for each tour
+- 🎞️ Auto-sliding featured tours & testimonials
+- 📱 Fully responsive (mobile & desktop)
+- 🧭 Client-side routing using React Router
+- 🎨 Modern UI with Tailwind CSS
+- ⚡ Optimized using React Hooks
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+- **Frontend:** React
+- **Styling:** Tailwind CSS
+- **Routing:** react-router-dom
+- **Icons:** lucide-react
+- **State Management:** React Hooks
+- **Deployment:** Netlify / Vercel
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📦 Dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+react
+react-dom
+react-router-dom
+lucide-react
+tailwindcss
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If using Vite:
+vite
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+📂 Project Structure
+project-root/
+│
+├── public/
+│   ├── images/
+│   │   ├── hero/
+│   │   ├── gallery/
+│   │   ├── fe/
+│   │   └── logo.png
+│
+├── src/
+│   ├── EnquiryModal.jsx
+│   ├── GalleryModal.jsx
+│   ├── Tours.jsx
+│   ├── About.jsx
+│   ├── Contact.jsx
+│   ├── App.js
+│   ├── main.jsx
+│   ├── index.css
+│
+├── package.json
+├── tailwind.config.js
+├── README.md
+└── vite.config.js / craco.config.js
 
-### `npm run eject`
+⚙️ Installation & Setup
+1️⃣ Clone Repository
+git clone https://github.com/your-username/india-tour-company.git
+cd india-tour-company
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2️⃣ Install Dependencies
+npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3️⃣ Run Development Server
+Vite
+npm run dev
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+CRA
+npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🏗️ Build for Production
+npm run build
+Vite: dist/
+CRA: build/
 
-## Learn More
+🌐 Deployment (Netlify)
+Run:
+npm run build
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Upload the build folder (dist or build)
+Add redirect rule for React Router:
+Create a file _redirects inside public/:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+/*  /index.html  200
 
-### Code Splitting
+🧠 Key Files Explanation
+App.js
+Main application file
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Handles:
+Featured tour slider
+Gallery scrolling & modal
+Testimonials rotation
+Header scroll effects
+Tour data & UI rendering
 
-### Analyzing the Bundle Size
+EnquiryModal.jsx
+Opens on Enquire Now
+Receives selected tour data
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+GalleryModal.jsx
+Displays tour gallery images in modal
 
-### Making a Progressive Web App
+🔁 Routing Used
+<Route path="/" element={<Home />} />
+<Route path="/tours" element={<Tours />} />
+<Route path="/about" element={<About />} />
+<Route path="/contact" element={<Contact />} />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+🎨 UI Highlights
+Gradient-based modern theme
+Glassmorphism navigation bar
+Smooth animations & transitions
+Icon-based feature highlights
+Mobile-first design
+📌 Future Enhancements
+🔐 Admin dashboard
+💳 Online booking & payment gateway
+🌍 Multi-language support
+🤖 AI-based tour recommendations
+📊 Analytics dashboard
 
-### Advanced Configuration
+👨‍💻 Author
+Vikash Gautam
+B.Tech AI | Software Engineering
+📍 India
+🚀 Dream Company: NVIDIA
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+📜 License
 
-### Deployment
+This project is licensed for educational and commercial use.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
